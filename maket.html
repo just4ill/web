@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Макет</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .photo {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        .skills {
+            padding: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .form-section {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-section input, .form-section textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            max-width: 400px;
+        }
+        .form-section input[type="submit"] {
+            width: auto;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Макет</h1>
+    </header>
+    <main>
+        <div class="photo">Фото</div>
+        <div class="content">Контент 1</div>
+        <div class="content full-width">Контент 2</div>
+        <div class="content full-width">Контент 3</div>
+        <div class="content">Контент 4</div>
+        <div class="content">Контент 5</div>
+        <div class="skills full-width">
+            <h2>Навички</h2>
+            <div class="skills-grid">
+                <div class="skill-item">3D modeling: ★★★★★</div>
+                <div class="skill-item">HTML: ★★★★☆</div>
+                <div class="skill-item">CSS: ★★★★☆</div>
+                <div class="skill-item">C#: ★★★★☆</div>
+                <div class="skill-item">Java: ★★★★☆</div>
+                <div class="skill-item">Photoshop: ★★★★☆</div>
+                <div class="skill-item">Texturing: ★★★★☆</div>
+                <div class="skill-item">Javascript: ★★★☆☆</div>
+                <div class="skill-item">C++: ★★★☆☆</div>
+                <div class="skill-item">Painting: ★★☆☆☆</div>
+            </div>
+        </div>
+    
+        <!-- Блок форми -->
+        <div class="form-section">
+            <h2>Зв'яжіться з нами</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Персональна сторінка</p>
+    </footer>
+</body>
+</html>

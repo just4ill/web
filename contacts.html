@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            text-align: center;
+            margin: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        img {
+            width: 300px; /* Встановлюємо ширину фото */
+            height: auto;
+        }
+        .emoji {
+            width: 16px; /* Встановлюємо ширину смайлика */
+            height: 16px; /* Встановлюємо висоту смайлика */
+        }
+        .form-section {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 350px;
+            position: fixed;
+            bottom: 10px;  /* Відступ від нижньої частини вікна */
+            right: 50px;    /* Відступ від лівої частини вікна */
+        }
+        .form-section input, .form-section textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section input[type="submit"] {
+            width: auto;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+        }
+    </style>
+   
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Головна</a></li>
+                <li><a href="about.html">Про себе</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Зі мною можна зв'язатися через</h2>
+            <p>Email: 8125609@stud.nau.edu.ua <br>Telegram, Viber: +380 63 592 68 31 <br>Discord: 509731423175835653 або justch1ll</p>
+            <div class="form-section">
+                <form action="#" method="post">
+                    <h2>Також можна залишити форму</h2>
+                    <label for="name">Як до вас звертатися:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Дані для зворотнього зв'язку:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Повідомлення:</label><br>
+                    <textarea id="message" name="message" rows="4"></textarea><br>
+                    <input type="submit" value="Надіслати">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- <p>&copy; 2024 Персональна сторінка <img class="emoji" src="emoji.png" alt="Смайлик"></p> -->
+        <p>&copy; 2024 Персональна сторінка </p>
+    </footer>
+</body>
+</html>
